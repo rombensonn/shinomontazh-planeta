@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { business } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ["", "/privacy", "/consent"];
   const lastModified = new Date();

@@ -16,6 +16,13 @@ export const business = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
 };
 
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+export const sitePath = (path: string) => {
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  return `${basePath}${normalizedPath}`;
+};
+
 export const serviceOptions = [
   "шиномонтаж",
   "балансировка",

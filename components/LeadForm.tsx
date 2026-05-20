@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowRight, Loader2, Send, ShieldCheck } from "lucide-react";
 import { useState } from "react";
 import { useForm, type Resolver } from "react-hook-form";
-import { business, serviceOptions } from "@/lib/site";
+import { business, serviceOptions, sitePath } from "@/lib/site";
 import { leadFormSchema, type LeadFormValues } from "@/lib/validation";
 import { Button } from "@/components/ui";
 
@@ -198,7 +198,7 @@ export function LeadForm({ variant, title, compact = false }: LeadFormProps) {
           label={
             <>
               Я ознакомлен(а) с{" "}
-              <a className="font-semibold text-service-blue underline underline-offset-4" href="/privacy">
+              <a className="font-semibold text-service-blue underline underline-offset-4" href={sitePath("/privacy")}>
                 Политикой обработки персональных данных
               </a>
             </>

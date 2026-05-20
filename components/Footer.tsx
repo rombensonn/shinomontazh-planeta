@@ -1,4 +1,4 @@
-import { business } from "@/lib/site";
+import { business, sitePath } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -10,10 +10,10 @@ export function Footer() {
             балансировка, хранение шин и Б/У шины в Подольске.
           </p>
           <div className="flex flex-wrap gap-4 font-bold text-white">
-            <a className="transition hover:text-service-amber" href="/privacy">
+            <a className="transition hover:text-service-amber" href={sitePath("/privacy")}>
               Политика обработки персональных данных
             </a>
-            <a className="transition hover:text-service-amber" href="/consent">
+            <a className="transition hover:text-service-amber" href={sitePath("/consent")}>
               Согласие на обработку персональных данных
             </a>
           </div>
