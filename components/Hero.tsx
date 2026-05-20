@@ -7,7 +7,7 @@ import {
   Star,
 } from "lucide-react";
 import Image from "next/image";
-import { business } from "@/lib/site";
+import { business, sitePath } from "@/lib/site";
 import { SectionReveal } from "@/components/SectionReveal";
 import { CtaLink } from "@/components/ui";
 
@@ -74,7 +74,7 @@ function ServiceVisual() {
       className="bolt-corners relative min-h-[360px] w-full overflow-hidden rounded-lg border border-white/[0.16] bg-graphite-900 text-white shadow-industrial"
     >
       <Image
-        src="/images/industrial-hero.jpg"
+        src={sitePath("/images/industrial-hero.jpg")}
         alt="Колесо на шиномонтажном оборудовании в сервисной зоне"
         fill
         priority
