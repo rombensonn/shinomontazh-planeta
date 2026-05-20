@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://rombensonn.github.io/shinomontazh-planeta
+Sitemap: https://rombensonn.github.io/shinomontazh-planeta/sitemap.xml
